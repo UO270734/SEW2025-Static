@@ -1,0 +1,35 @@
+/* Mauro Varea Fernández UO270734 */
+
+/* Especificidad 001 */
+header {
+	display: flex; 
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+
+/* Especificidad 001 */
+nav {
+	display: flex; 
+	flex-wrap: wrap;
+}
+
+@media all and (max-width: 500px) {
+    /* Especificidad 001 */
+    header {
+		flex-wrap: nowrap; /* Redefinición de la propiedad flex-wrap */
+    }
+
+    /* Especificidad 001 */
+    nav {
+		flex-direction: column;
+		flex-wrap: nowrap; /* Redefinición de la propiedad flex-wrap */
+    }
+
+	/* Especifidad 012 */
+	body > p:first-of-type {
+		display: none;
+	}
+
+}

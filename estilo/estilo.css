@@ -1,0 +1,254 @@
+/* Mauro Varea Fernández UO270734 */
+
+/* Especificidad 001 */
+body {  
+	padding: 2em;
+	font-family: Verdana, Arial, sans-serif;
+    color: #000000;
+	background-color: #75E6DA;
+}
+
+/* Especificidad 001 */
+header {
+	/* Arriba, lados, abajo */
+	padding: 1em 1em 2em;
+	background-color: #40B0DF;
+	/* color heredado de body #000000 */
+}
+
+/* Especificidad 002 */
+footer p {
+	text-align: center;
+}
+
+/* BARRAS DE NAVEGACIÓN */
+/* Especifidad 002 */
+nav a {
+	padding: 1em;
+	text-decoration-line: none;
+	color: #000000;
+	/* background-color heredado de header #40B0DF */
+}
+
+/* Especifidad 013 */
+header nav a:hover {
+   background-color: #75E6DA;
+   /* color heredado de body #000000 */
+}
+
+/* Especifidad 012 */
+nav a.active {
+	font-weight: bold;
+	border-bottom: 0.25em solid #000000;
+}
+
+/* Especifidad (0,1,2) */
+nav a:hover{
+	background-color: #40B0DF;
+	/* color heredado de body #000000 */
+}
+
+/* ENLACES */
+/* Especifidad 002 */
+h1 a {
+	text-decoration-line: none;
+	color: #000000;
+	/* background-color heredado de header #40B0DF */
+}
+
+/* Especifidad 012 */
+body > p:first-of-type {
+	font-size: 0.85em;
+}
+
+/* Especifidad 002 */
+body a {
+	color: #000000;
+	/* background-color heredado de body #75E6DA */
+}
+
+/* TÍTULOS */
+/* Especificidad 001 */
+h1 {
+	font-size: 3em;
+}
+
+/* Especificidad 001 */
+h2 {
+	font-size: 2em;
+}
+
+/* Especificidad 001 */
+h3 {
+	font-size: 1.6em;
+	margin-block-end: 0.6em;
+}
+
+/* Especificidad 001 */
+h4 {
+	font-size: 1.3em;
+	margin-block-end: 0.6em;
+}
+
+/* Especificidad 001 */
+h5 {
+	font-size: 1.2em;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.3em;
+}
+
+/* Especificidad 001 */
+h6 {
+	font-size: 1.1em;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.3em;
+}
+
+/* LISTAS */
+/* Especificidad 001 */
+ul { 
+	list-style-type: circle;
+	padding-inline-start: 1.5em; 
+}
+
+/* Especificidad 001 */
+ol { 
+	padding-inline-start: 1.5em; 
+}
+
+/* Especificidad 001 */
+dt {
+	font-weight: bold;
+}
+
+/* Especificidad 003 */
+ol ul li {
+	font-style: italic;
+}
+  
+/* Especificidad 002 */
+li::marker {
+	font-weight: bold;
+}
+
+/* TABLA */
+/* Especificidad 001 */
+table {
+	border: 0.3em solid #40B0DF;
+	border-collapse: collapse;
+	margin: 0em;
+}
+
+/* Especificidad 001 */
+th { 
+	background-color: #40B0DF;
+	/* color heredado de body #000000 */
+	border: 0.05em solid #40B0DF;   
+	padding: 0.5em;
+}
+
+/* Especificidad 001 */
+td {
+	border: 0.05em solid #40B0DF;
+	padding: 0.5em;
+	text-align: center;
+}
+
+/* MULTIMEDIA */
+/* Especificidad 001 */
+video {
+	max-width: 90%;
+	height: auto;
+}
+
+/* Especificidad 001 */
+img {
+	max-width: 90%;
+	height: auto;
+}
+
+/* Especificidad 001 */
+figure {
+    max-width: 100%;
+    height: 35em;
+	margin: 0.3em;
+}
+
+/* Especificidad 002 */
+figure img {
+	max-width: 100%;
+    height: 90%;
+    object-fit: cover;
+}
+
+/* Especificidad 001 */
+figcaption {
+    margin-top: 0.5em;
+    font-size: 1em;
+}
+
+/* ENTRADAS */
+/* Especificidad 001 */
+button {
+	background-color: #40B0DF;
+	/* color heredado de body #000000 */
+	font-size: 1em;
+	padding: 0.4em;
+}
+
+/* Especificidad 001 */
+input {
+	font-size: 1em;
+	padding: 0.3em;
+	margin: 0.3em 0.3em 0.3em 0em;
+}
+
+/* MAPA */
+/* Especificidad 002 */
+section > div {
+	width: 50vw;
+	height: 50vh;
+}
+
+canvas {
+    margin: 0.5em;
+    border: 0.3em solid #40B0DF;
+    background-color: #ffffff;
+	max-width: 90%;
+}
+
+
+@media all and (max-width: 500px) {
+	/* Especificidad 001 */
+	body {
+		padding: 1em; /* Redefinición de la propiedad padding */
+	}
+
+	/* Especificidad 001 */
+	header {
+		padding: 1em; /* Redefinición de la propiedad padding */
+	}
+
+	/* Especificidad 001 */
+	nav {
+		padding: 0em;
+	}
+
+	/* Especificidad 002 */
+	nav a {
+		padding: 0.5em; /* Redefinición de la propiedad padding */
+	}
+
+	/* Especificidad 001 */
+	h1 {
+		font-size: 2em; /* Redefinición de la propiedad font-size */
+		margin-block-start: 0em;
+		margin-block-end: 0.2em;
+	}
+
+	/* Especificidad 002 */
+	section > div {
+		width: 80vw; /* Redefinición de la propiedad width */
+	}
+
+}
