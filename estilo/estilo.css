@@ -203,13 +203,25 @@ input {
 	margin: 0.3em 0.3em 0.3em 0em;
 }
 
+/* Especificidad 001 */
+fieldset {
+	margin: 1em 0em;
+	border-color: #40B0DF;
+}
+
+/* Especificidad 001 */
+legend {
+	font-weight: bold;
+}
+
 /* MAPA */
-/* Especificidad 002 */
+/* Especificidad 003 */
 section > div {
 	width: 50vw;
 	height: 50vh;
 }
 
+/* Especificidad 001 */
 canvas {
     margin: 0.5em;
     border: 0.3em solid #40B0DF;
