@@ -1,0 +1,104 @@
+<!DOCTYPE HTML>
+<html lang="es"><head>
+    <meta charset="UTF-8">
+    <title>Proyecto convocatoria extraordinaria - Reservas - Ver horarios</title>
+	<link rel="icon" href="../multimedia/favicon.ico" sizes="16x16" type="image/ico">
+	
+	<meta name="author" content="Mauro Varea Fernández">
+	<meta name="description" content="Documento del proyecto para las reservas">
+	<meta name="keywords" content="reserva, turismo, turistico, horario, anular">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="stylesheet" type="text/css" href="../estilo/estilo.css">
+	<link rel="stylesheet" type="text/css" href="../estilo/layout.css">
+</head>
+<body>
+    <header>
+		<h1><a href="index.html">Proyecto convocatoria extraordinaria</a></h1>		
+		<nav>
+			<a title="Página principal" href="../index.html">Página principal</a>
+			<a title="Gastronomía" href="../gastronomia.html">Gastronomía</a>
+			<a title="Rutas" href="../rutas.html">Rutas</a>
+			<a title="Meteorología" href="../meteorologia.html">Meteorología</a>
+            <a title="Juego" href="../juego.html">Juego</a>
+			<a title="Reservas" href="../reservas.html">Reservas</a>
+			<a title="Ayuda" href="../ayuda.html">Ayuda</a>
+		</nav>
+	</header>
+    <p><a href="../index.html">Inicio</a> &gt;&gt; <a href="../reservas.html">Reservas</a> &gt;&gt; Horarios disponibles</p>
+    <main>
+        <h2>Horarios disponibles para reservar</h2>
+        <p><a href="../reservas.html">← Volver</a></p>
+		<section>
+			<h3>Bajada en canoa en el Sella (Actividad)</h3>
+			<p>Actividad en grupo por el río</p>
+			<p>Plazas: 15 | Precio: 30.00 €</p>
+			<p>No hay horarios disponibles.</p>
+		</section>
+		<section>
+			<h3>Hotel Montaña (Hotel)</h3>
+			<p>Vistas al monte y desayuno incluido</p>
+			<p>Plazas: 10 | Precio: 80.00 €</p>
+			<p>No hay horarios disponibles.</p>
+		</section>
+		<section>
+			<h3>Museo de la Sidra (Museo)</h3>
+			<p>Espacio cultural sobre la historia de la sidra</p>
+			<p>Plazas: 20 | Precio: 5.00 €</p>
+			<table>
+				<tbody>
+					<tr>
+						<th>Inicio</th>
+						<th>Fin</th>
+						<th>Reservar</th>
+					</tr>
+					<tr>
+						<td>2025-04-10 10:00:00</td>
+						<td>2025-04-10 11:00:00</td>
+						<td>
+							<form action="ReservaControlador.php" method="post">
+								<input type="hidden" name="accion" value="crear">
+								<input type="hidden" name="recurso_id" value="1">
+								<input type="hidden" name="horario_id" value="1">
+								<button type="submit">Reservar</button>
+							</form>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+		<section>
+			<h3>Restaurante El Asturiano (Restaurante)</h3>
+			<p>Comida tradicional asturiana</p>
+			<p>Plazas: 50 | Precio: 25.00 €</p>
+			<p>No hay horarios disponibles.</p>
+		</section>
+		<section>
+			<h3>Ruta del Cares (Ruta)</h3>
+			<p>Camino natural entre montañas</p>
+			<p>Plazas: 30 | Precio: 0.00 €</p>
+			<table>
+				<tbody>
+					<tr>
+						<th>Inicio</th>
+						<th>Fin</th>
+						<th>Reservar</th>
+					</tr>
+					<tr>
+						<td>2025-04-12 08:00:00</td>
+						<td>2025-04-12 12:00:00</td>
+						<td>
+							<form action="ReservaControlador.php" method="post">
+								<input type="hidden" name="accion" value="crear">
+								<input type="hidden" name="recurso_id" value="3">
+								<input type="hidden" name="horario_id" value="4">
+								<button type="submit">Reservar</button>
+							</form>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+	</main>
+</body>
+</html>

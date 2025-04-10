@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+
+<html lang="es"><head>
+    <meta charset="UTF-8">
+    <title>Proyecto convocatoria extraordinaria - Reservas</title>
+	<link rel="icon" href="multimedia/favicon.ico" sizes="16x16" type="image/ico">
+	
+	<meta name="author" content="Mauro Varea Fernández">
+	<meta name="description" content="Documento del proyecto para las reservas">
+	<meta name="keywords" content="reserva, turismo, turistico, registro">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="stylesheet" type="text/css" href="estilo/estilo.css">
+	<link rel="stylesheet" type="text/css" href="estilo/layout.css">
+</head>
+
+<body>
+	<header>
+		<h1><a href="index.html">Proyecto convocatoria extraordinaria</a></h1>		
+		<nav>
+			<a title="Página principal" href="index.html">Página principal</a>
+			<a title="Gastronomía" href="gastronomia.html">Gastronomía</a>
+			<a title="Rutas" href="rutas.html">Rutas</a>
+			<a title="Meteorología" href="meteorologia.html">Meteorología</a>
+            <a title="Juego" href="juego.html">Juego</a>
+			<a title="Reservas" href="reservas.html" class="active">Reservas</a>
+			<a title="Ayuda" href="ayuda.html">Ayuda</a>
+		</nav>
+	</header>
+	<p><a href="index.html">Inicio</a> &gt;&gt; Reservas</p>
+	<main>
+		<h2>Reservas</h2>
+		<section>
+			<h3>Iniciar sesión</h3>
+			<form action="php/UsuarioControlador.php" method="post">
+				<input type="hidden" name="accion" value="login">
+				<label>Nombre: <input type="text" name="nombre" required=""></label><br>
+				<label>Clave: <input type="password" name="clave" required=""></label><br>
+				<button type="submit">Entrar</button>
+			</form>
+		</section>
+		<section>
+			<h3>Registrarse</h3>
+			<form action="php/UsuarioControlador.php" method="post">
+				<input type="hidden" name="accion" value="registro">
+				<label>Nombre: <input type="text" name="nombre" required=""></label><br>
+				<label>Clave: <input type="password" name="clave" required=""></label><br>
+				<button type="submit">Registrarse</button>
+			</form>
+		</section>
+		<section>
+			<p>Bienvenido, Mauro.</p>
+			<h3>Opciones:</h3>
+			<ul>
+				<li><a href="php/ver_horarios.html">Ver horarios disponibles</a></li>
+				<li><a href="php/mis_reservas.html">Ver mis reservas</a></li>
+			</ul>
+			<form action="php/UsuarioControlador.php" method="get">
+				<input type="hidden" name="accion" value="logout">
+				<button type="submit">Cerrar sesión</button>
+			</form>
+		</section>
+	</main>
+
+</body>
+</html>
