@@ -120,21 +120,22 @@ ol {
 dt {
 	font-weight: bold;
 }
-
-/* Especificidad 003 */
-ol ul li {
-	font-style: italic;
-}
   
 /* Especificidad 002 */
 li::marker {
 	font-weight: bold;
 }
 
+/* Especificidad 002 */
+fieldset ul {
+	list-style-type: none;
+	padding-inline-start: 0em;
+}
+
 /* TABLA */
 /* Especificidad 001 */
 table {
-	border: 0.3em solid #40B0DF;
+	border: 0.25em solid #40B0DF;
 	border-collapse: collapse;
 	margin: 0em;
 }
@@ -144,13 +145,13 @@ th {
 	background-color: #40B0DF;
 	/* color heredado de body #000000 */
 	border: 0.05em solid #40B0DF;   
-	padding: 0.5em;
+	padding: 0.3em;
 }
 
 /* Especificidad 001 */
 td {
 	border: 0.05em solid #40B0DF;
-	padding: 0.5em;
+	padding: 0.25em;
 	text-align: center;
 }
 
@@ -193,7 +194,7 @@ button {
 	background-color: #40B0DF;
 	/* color heredado de body #000000 */
 	font-size: 1em;
-	padding: 0.4em;
+	padding: 0.35em;
 }
 
 /* Especificidad 001 */
@@ -226,14 +227,13 @@ canvas {
     margin: 0.5em;
     border: 0.3em solid #40B0DF;
     background-color: #ffffff;
-	max-width: 90%;
 }
 
 
 @media all and (max-width: 500px) {
 	/* Especificidad 001 */
 	body {
-		padding: 1em; /* Redefinición de la propiedad padding */
+		padding: 0.5em; /* Redefinición de la propiedad padding */
 	}
 
 	/* Especificidad 001 */
