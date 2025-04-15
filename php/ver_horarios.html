@@ -27,36 +27,86 @@
 	</header>
     <p><a href="../index.html">Inicio</a> &gt;&gt; <a href="../reservas.html">Reservas</a> &gt;&gt; Horarios disponibles</p>
     <main>
-        <h2>Horarios disponibles para reservar</h2>
+        <h2>Reservas - Horarios disponibles</h2>
         <p><a href="../reservas.html">← Volver</a></p>
-		<section>
+		<article>
 			<h3>Bajada en canoa en el Sella (Actividad)</h3>
-			<p>Actividad en grupo por el río</p>
-			<p>Plazas: 15 | Precio: 30.00 €</p>
-			<p>No hay horarios disponibles.</p>
-		</section>
-		<section>
-			<h3>Hotel Montaña (Hotel)</h3>
-			<p>Vistas al monte y desayuno incluido</p>
-			<p>Plazas: 10 | Precio: 80.00 €</p>
-			<p>No hay horarios disponibles.</p>
-		</section>
-		<section>
-			<h3>Museo de la Sidra (Museo)</h3>
-			<p>Espacio cultural sobre la historia de la sidra</p>
-			<p>Plazas: 20 | Precio: 5.00 €</p>
+			<p>Actividad en grupo por el río.</p>
+			<p>Abierto de: 09:00 a 14:00.</p>
+			<p>Plazas máximas: 15 | Precio: 30.00 €</p>
 			<table>
+				<thead>
+					<tr>
+						<th id="fecha5">Fecha</th>
+						<th id="horario5">Horario</th>
+						<th id="plazas5">Plazas</th>
+						<th id="accion5">Reservar</th>
+					</tr>
+				</thead>
 				<tbody>
 					<tr>
-						<th>Inicio</th>
-						<th>Fin</th>
-						<th>Reservar</th>
+						<td headers="fecha5">11/04/2025</td>
+						<td headers="horario5">09:00 - 11:00</td>
+						<td headers="plazas5">15</td>
+						<td headers="accion5">
+						<form action="reservaControlador.php" method="post">
+							<input type="hidden" name="accion" value="crear">
+							<input type="hidden" name="recurso_id" value="5">
+							<input type="hidden" name="horario_id" value="5">
+							<button type="submit">Reservar</button>
+						</form>
+						</td>
 					</tr>
+				</tbody>
+			</table>
+		</article>
+		<article>
+			<h3>Hotel Montaña (Hotel)</h3>
+			<p>Vistas al monte y desayuno incluido.</p>
+			<p>Abierto de: 00:00 a 23:59.</p>
+			<p>Plazas máximas: 10 | Precio: 80.00 €</p>
+			<table>
+				<thead>
 					<tr>
-						<td>2025-04-10 10:00:00</td>
-						<td>2025-04-10 11:00:00</td>
-						<td>
-							<form action="ReservaControlador.php" method="post">
+						<th id="fecha2">Fecha</th>
+						<th id="horario2">Horario</th>
+						<th id="plazas2">Plazas</th>
+						<th id="accion2">Reservar</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td headers="fecha2">15/04/2025</td>
+						<td headers="horario2">12:00 - 14:00</td>
+						<td headers="plazas2">7</td>
+						<td headers="accion2">
+							Reservado
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</article>
+		<article>
+			<h3>Museo de la Sidra (Museo)</h3>
+			<p>Espacio cultural sobre la historia de la sidra.</p>
+			<p>Abierto de: 10:00 a 18:00.</p>
+			<p>Plazas máximas: 20 | Precio: 5.00 €</p>
+			<table>
+				<thead>
+					<tr>
+						<th id="fecha1">Fecha</th>
+						<th id="horario1">Horario</th>
+						<th id="plazas1">Plazas</th>
+						<th id="accion1">Reservar</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td headers="fecha1">10/04/2025</td>
+						<td headers="horario1">10:00 - 11:00</td>
+						<td headers="plazas1">20</td>
+						<td headers="accion1">
+							<form action="reservaControlador.php" method="post">
 								<input type="hidden" name="accion" value="crear">
 								<input type="hidden" name="recurso_id" value="1">
 								<input type="hidden" name="horario_id" value="1">
@@ -66,31 +116,30 @@
 					</tr>
 				</tbody>
 			</table>
-		</section>
-		<section>
+		</article>
+		<article>
 			<h3>Restaurante El Asturiano (Restaurante)</h3>
-			<p>Comida tradicional asturiana</p>
-			<p>Plazas: 50 | Precio: 25.00 €</p>
-			<p>No hay horarios disponibles.</p>
-		</section>
-		<section>
-			<h3>Ruta del Cares (Ruta)</h3>
-			<p>Camino natural entre montañas</p>
-			<p>Plazas: 30 | Precio: 0.00 €</p>
+			<p>Comida tradicional asturiana.</p>
+			<p>Abierto de: 13:00 a 23:00.</p>
+			<p>Plazas máximas: 50 | Precio: 25.00 €</p>
 			<table>
+				<thead>
+					<tr>
+						<th id="fecha4">Fecha</th>
+						<th id="horario4">Horario</th>
+						<th id="plazas4">Plazas</th>
+						<th id="accion4">Reservar</th>
+					</tr>
+				</thead>
 				<tbody>
 					<tr>
-						<th>Inicio</th>
-						<th>Fin</th>
-						<th>Reservar</th>
-					</tr>
-					<tr>
-						<td>2025-04-12 08:00:00</td>
-						<td>2025-04-12 12:00:00</td>
-						<td>
-							<form action="ReservaControlador.php" method="post">
+						<td headers="fecha4">09/04/2025</td>
+						<td headers="horario4">13:00 - 14:30</td>
+						<td headers="plazas4">50</td>
+						<td headers="accion4">
+							<form action="reservaControlador.php" method="post">
 								<input type="hidden" name="accion" value="crear">
-								<input type="hidden" name="recurso_id" value="3">
+								<input type="hidden" name="recurso_id" value="4">
 								<input type="hidden" name="horario_id" value="4">
 								<button type="submit">Reservar</button>
 							</form>
@@ -98,7 +147,38 @@
 					</tr>
 				</tbody>
 			</table>
-		</section>
+		</article>
+		<article>
+			<h3>Ruta del Cares (Ruta)</h3>
+			<p>Camino natural entre montañas.</p>
+			<p>Abierto de: 08:00 a 20:00.</p>
+			<p>Plazas máximas: 30 | Precio: 0.00 €</p>
+			<table>
+				<thead>
+					<tr>
+						<th id="fecha3">Fecha</th>
+						<th id="horario3">Horario</th>
+						<th id="plazas3">Plazas</th>
+						<th id="accion3">Reservar</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td headers="fecha3">12/04/2025</td>
+						<td headers="horario3">08:00 - 12:00</td>
+						<td headers="plazas3">30</td>
+						<td headers="accion3">
+						<form action="reservaControlador.php" method="post">
+							<input type="hidden" name="accion" value="crear">
+							<input type="hidden" name="recurso_id" value="3">
+							<input type="hidden" name="horario_id" value="3">
+							<button type="submit">Reservar</button>
+						</form>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</article>
 	</main>
 </body>
 </html>

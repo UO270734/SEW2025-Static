@@ -26,155 +26,126 @@
 		</nav>
 	</header>
     <p><a href="../index.html">Inicio</a> &gt;&gt; <a href="../reservas.html">Reservas</a> &gt;&gt; Mis reservas</p>
-    <main>
-        <h1>Mis reservas</h1>
+	<main>
+        <h2>Mis reservas</h2>
         <p><a href="../reservas.html">← Volver</a></p>
-		<table>
-			<tbody>
-				<tr>
-					<th>Recurso</th>
-					<th>Tipo</th>
-					<th>Fecha</th>
-					<th>Horario</th>
-					<th>Precio</th>
-					<th>Estado</th>
-					<th>Acciones</th>
-				</tr>
-				<tr>
-					<td>Hotel Montaña</td>
-					<td>Hotel</td>
-					<td>15/04/2025</td>
-					<td>12:00 - 14:00</td>
-					<td>80.00 €</td>
-					<td>Confirmada</td>
-					<td>
-						<form action="ReservaControlador.php" method="post">
-							<input type="hidden" name="accion" value="anular">
-							<input type="hidden" name="reserva_id" value="6">
-							<button type="submit" onclick="return confirm('¿Anular esta reserva?');">Anular</button>
-						</form>
-					</td>
-				</tr>
-				<tr>
-					<td>Bajada en canoa en el Sella</td>
-					<td>Actividad</td>
-					<td>11/04/2025</td>
-					<td>09:00 - 11:00</td>
-					<td>30.00 €</td>
-					<td>Confirmada</td>
-					<td>
-						<form action="ReservaControlador.php" method="post">
-							<input type="hidden" name="accion" value="anular">
-							<input type="hidden" name="reserva_id" value="11">
-							<button type="submit" onclick="return confirm('¿Anular esta reserva?');">Anular</button>
-						</form>
-					</td>
-				</tr>
-				<tr>
-					<td>Restaurante El Asturiano</td>
-					<td>Restaurante</td>
-					<td>09/04/2025</td>
-					<td>13:00 - 14:30</td>
-					<td>25.00 €</td>
-					<td>Confirmada</td>
-					<td>
-						<form action="ReservaControlador.php" method="post">
-							<input type="hidden" name="accion" value="anular">
-							<input type="hidden" name="reserva_id" value="12">
-							<button type="submit" onclick="return confirm('¿Anular esta reserva?');">Anular</button>
-						</form>
-					</td>
-				</tr>
-				<tr>
-					<td>Museo de la Sidra</td>
-					<td>Museo</td>
-					<td>01/01/1970</td>
-					<td>01:00 - 01:00</td>
-					<td>5.00 €</td>
-					<td>Anulada</td>
-					<td>
-						<em>—</em>
-					</td>
-				</tr>
-				<tr>
-					<td>Museo de la Sidra</td>
-					<td>Museo</td>
-					<td>01/01/1970</td>
-					<td>01:00 - 01:00</td>
-					<td>5.00 €</td>
-					<td>Anulada</td>
-					<td>
-						<em>—</em>
-					</td>
-				</tr>
-				<tr>
-					<td>Hotel Montaña</td>
-					<td>Hotel</td>
-					<td>01/01/1970</td>
-					<td>01:00 - 01:00</td>
-					<td>80.00 €</td>
-					<td>Anulada</td>
-					<td>
-						<em>—</em>
-					</td>
-				</tr>
-				<tr>
-					<td>Ruta del Cares</td>
-					<td>Ruta</td>
-					<td>01/01/1970</td>
-					<td>01:00 - 01:00</td>
-					<td>0.00 €</td>
-					<td>Anulada</td>
-					<td>
-						<em>—</em>
-					</td>
-				</tr>
-				<tr>
-					<td>Restaurante El Asturiano</td>
-					<td>Restaurante</td>
-					<td>01/01/1970</td>
-					<td>01:00 - 01:00</td>
-					<td>25.00 €</td>
-					<td>Anulada</td>
-					<td>
-						<em>—</em>
-					</td>
-				</tr>
-				<tr>
-					<td>Restaurante El Asturiano</td>
-					<td>Restaurante</td>
-					<td>01/01/1970</td>
-					<td>01:00 - 01:00</td>
-					<td>25.00 €</td>
-					<td>Anulada</td>
-					<td>
-						<em>—</em>
-					</td>
-				</tr>
-				<tr>
-					<td>Bajada en canoa en el Sella</td>
-					<td>Actividad</td>
-					<td>01/01/1970</td>
-					<td>01:00 - 01:00</td>
-					<td>30.00 €</td>
-					<td>Anulada</td>
-					<td>
-						<em>—</em>
-					</td>
-				</tr>
-				<tr>
-					<td>Bajada en canoa en el Sella</td>
-					<td>Actividad</td>
-					<td>01/01/1970</td>
-					<td>01:00 - 01:00</td>
-					<td>30.00 €</td>
-					<td>Anulada</td>
-					<td>
-						<em>—</em>
-					</td>
-				</tr>
-			</tbody>
-		</table>
-	</main>
+		<section>
+            <h3>Reservas confirmadas</h3>
+				<article>
+					<h4>Hotel Montaña (Hotel)</h4>
+					<p>Vistas al monte y desayuno incluido.</p>
+					<p>Precio: 80.00 €</p>
+					<table>
+						<thead>
+							<tr>
+								<th id="fecha4">Fecha</th>
+								<th id="horario4">Horario</th>
+								<th id="accion4">Anular</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td headers="fecha4">15/04/2025</td>
+								<td headers="horario4">12:00 - 14:00</td>
+								<td headers="accion4">
+									<form action="reservaControlador.php" method="post">
+										<input type="hidden" name="accion" value="anular">
+										<input type="hidden" name="reserva_id" value="4">
+										<button type="submit">Anular</button>
+									</form>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</article>
+				<article>
+					<h4>Hotel Montaña (Hotel)</h4>
+					<p>Vistas al monte y desayuno incluido.</p>
+					<p>Precio: 80.00 €</p>
+					<table>
+						<thead>
+							<tr>
+								<th id="fecha6">Fecha</th>
+								<th id="horario6">Horario</th>
+								<th id="accion6">Anular</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td headers="fecha6">15/04/2025</td>
+								<td headers="horario6">12:00 - 14:00</td>
+								<td headers="accion6">
+									<form action="reservaControlador.php" method="post">
+										<input type="hidden" name="accion" value="anular">
+										<input type="hidden" name="reserva_id" value="6">
+										<button type="submit">Anular</button>
+									</form>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</article>
+		</section>
+        <section>
+            <h3>Reservas anuladas</h3>
+			<article>
+				<h4>Hotel Montaña (Hotel)</h4>
+				<p>Vistas al monte y desayuno incluido.</p>
+				<p>Precio: 80.00 €</p>
+				<table>
+					<thead>
+						<tr>
+							<th id="fecha3">Fecha</th>
+							<th id="horario3">Horario</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td headers="fecha3">15/04/2025</td>
+							<td headers="horario3">12:00 - 14:00</td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+			<article>
+				<h4>Bajada en canoa en el Sella (Actividad)</h4>
+				<p>Actividad en grupo por el río.</p>
+				<p>Precio: 30.00 €</p>
+				<table>
+					<thead>
+						<tr>
+							<th id="fecha7">Fecha</th>
+							<th id="horario7">Horario</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td headers="fecha7">11/04/2025</td>
+							<td headers="horario7">09:00 - 11:00</td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+			<article>
+				<h4>Museo de la Sidra (Museo)</h4>
+				<p>Espacio cultural sobre la historia de la sidra.</p>
+				<p>Precio: 5.00 €</p>
+				<table>
+					<thead>
+						<tr>
+							<th id="fecha1">Fecha</th>
+							<th id="horario1">Horario</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td headers="fecha1">10/04/2025</td>
+							<td headers="horario1">10:00 - 11:00</td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+		</section>
+    </main>
 </body>
 </html>

@@ -32,7 +32,7 @@
 		<h2>Reservas</h2>
 		<section>
 			<h3>Iniciar sesión</h3>
-			<form action="php/UsuarioControlador.php" method="post">
+			<form action="php/usuarioControlador.php" method="post">
 				<input type="hidden" name="accion" value="login">
 				<label>Nombre: <input type="text" name="nombre" required=""></label><br>
 				<label>Clave: <input type="password" name="clave" required=""></label><br>
@@ -41,7 +41,7 @@
 		</section>
 		<section>
 			<h3>Registrarse</h3>
-			<form action="php/UsuarioControlador.php" method="post">
+			<form action="php/usuarioControlador.php" method="post">
 				<input type="hidden" name="accion" value="registro">
 				<label>Nombre: <input type="text" name="nombre" required=""></label><br>
 				<label>Clave: <input type="password" name="clave" required=""></label><br>
@@ -50,17 +50,14 @@
 		</section>
 		<section>
 			<p>Bienvenido, Mauro.</p>
-			<h3>Opciones:</h3>
-			<ul>
-				<li><a href="php/ver_horarios.html">Ver horarios disponibles</a></li>
-				<li><a href="php/mis_reservas.html">Ver mis reservas</a></li>
-			</ul>
-			<form action="php/UsuarioControlador.php" method="get">
+			<form action="php/usuarioControlador.php" method="get">
 				<input type="hidden" name="accion" value="logout">
 				<button type="submit">Cerrar sesión</button>
 			</form>
+			<h3>Opciones:</h3>
+			<p><a href="php/ver_horarios.html">Ver horarios disponibles</a></p>
+			<p><a href="php/mis_reservas.html">Ver mis reservas</a></p>
 		</section>
 	</main>
-
 </body>
 </html>
